@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConstraintLayout</string>
+    <string name="nombre">nombre</string>
+    <string name="apellido">apellido</string>
+    <string name="email">email</string>
+    <string name="pasword">password</string>
+    <string name="create_account">Create account</string>
+</resources>
