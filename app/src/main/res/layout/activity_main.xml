@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style="@style/CustomBackground">
 
     <ImageView
         android:id="@+id/iv_avatar"
@@ -25,6 +26,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/nombre"
+        style="@style/CustomTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_avatar" />
@@ -38,6 +40,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/apellido"
+        style="@style/CustomTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
@@ -50,6 +53,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/email"
+        style="@style/CustomTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_apellido" />
@@ -62,6 +66,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/pasword"
+        style="@style/CustomTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
