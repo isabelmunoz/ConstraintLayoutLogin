@@ -6,40 +6,29 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.example.constraintlayout.databinding.ActivityMainBinding;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView ivAvatar;
-    private EditText etNombre;
-    private EditText etApellido;
 
+private ActivityMainBinding binding;
+public static final String URL_IMAGE="https://static.wikia.nocookie.net/eswikia/images/d/df/Pok%C3%A9mon.png/revision/latest?cb=20170308220152";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        initWidgets();
+        initBindings();
+        setContentView(binding.getRoot());
         loadImage();
-        loadName();
-        loadApellido();
+
     }
 
-    private void loadApellido() {
-        etApellido.setText("Muñoz");
-    }
-
-    private void loadName() {
-        etNombre.setText("Isabel");
-    }
-
-    private void initWidgets() {
-        ivAvatar=findViewById(R.id.iv_avatar);
-        etNombre=findViewById(R.id.et_nombre);
-        etApellido=findViewById(R.id.et_apellido);
+    private void initBindings() {
+       binding=ActivityMainBinding.inflate(getLayoutInflater());
     }
 
     private void loadImage() {
         Picasso.get()
-                .load("https://static.wikia.nocookie.net/eswikia/images/d/df/Pok%C3%A9mon.png/revision/latest?cb=20170308220152")
-                .into(ivAvatar);
+                .load(URL_IMAGE)
+                .into(binding.ivAvatar);
     }
 }
