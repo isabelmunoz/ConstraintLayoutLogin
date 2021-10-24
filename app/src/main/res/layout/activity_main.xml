@@ -72,23 +72,15 @@
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/create_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.example.constraintlayout.componentsart.button.ButtonCustom
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_saludo"
+        android:layout_width="223dp"
+        android:layout_height="86dp"
         android:layout_marginBottom="36dp"
-        android:text="Mi botón customizado"
+        android:text="saludo"
+        android:textColor="#FAF6F6"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
